@@ -577,6 +577,7 @@
       calculateTotal();
     }
 
+    // Update emails value and text
     function updateEmails(val) {
       emailsCount = parseInt(val);
       const suffix = emailsCount === 1 ? 'cuenta' : 'cuentas';
@@ -584,13 +585,15 @@
       calculateTotal();
     }
 
+    // Update support level
     function selectSupport(type, price) {
       supportPrice = price;
       calculateTotal();
     }
 
+    // Calculate total price based on selections
     function calculateTotal() {
-      // 1.5€ per extra email above 1 free email
+      // 2€ per extra email above 1 free email
       const extraEmailsCost = (emailsCount - 1) * 2; 
       const total = webTypePrice + extraEmailsCost + supportPrice;
       document.getElementById('price-display').innerText = total;
