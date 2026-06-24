@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo | Administrador de Fincas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+            display: ['DM Serif Display', 'serif'],
+          },
+          colors: {
+            ink: '#0f172a',
+            steel: {
+              50: '#f8fafc',
+              100: '#e2e8f0',
+              200: '#cbd5e1',
+              300: '#94a3b8',
+              600: '#475569',
+              700: '#334155',
+              900: '#0f172a',
+            },
+            bluechip: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              700: '#1d4ed8',
+              900: '#1e3a8a',
+            }
+          },
+          boxShadow: {
+            soft: '0 20px 60px rgba(15, 23, 42, 0.12)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#eef2f7] text-steel-900 font-sans">
+  <div class="min-h-screen lg:grid lg:grid-cols-[280px_minmax(0,1fr)]">
+    <aside class="bg-ink text-white px-6 py-8 lg:min-h-screen">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center font-bold text-xl">F</div>
+        <div>
+          <p class="text-xl font-semibold leading-none">Fincas Nova</p>
+          <p class="text-xs text-white/60">Administración de comunidades</p>
+        </div>
+      </div>
+
+      <div class="mt-10 space-y-6">
+        <div class="rounded-3xl bg-white/5 border border-white/10 p-5">
+          <p class="text-xs uppercase tracking-[0.28em] text-white/50">Sitio demo</p>
+          <p class="mt-3 text-sm text-white/80 leading-relaxed">
+            Una propuesta clara para comunidades que necesitan información ordenada, buena comunicación y respuesta ágil.
+          </p>
+        </div>
+
+        <nav class="space-y-2 text-sm">
+          <a href="#servicios" class="flex items-center justify-between rounded-2xl px-4 py-3 bg-white/5 hover:bg-white/10 transition-colors">
+            Servicios
+            <span class="text-white/40">01</span>
+          </a>
+          <a href="#comunidad" class="flex items-center justify-between rounded-2xl px-4 py-3 bg-white/5 hover:bg-white/10 transition-colors">
+            Portal de comunidad
+            <span class="text-white/40">02</span>
+          </a>
+          <a href="#proceso" class="flex items-center justify-between rounded-2xl px-4 py-3 bg-white/5 hover:bg-white/10 transition-colors">
+            Proceso
+            <span class="text-white/40">03</span>
+          </a>
+          <a href="#contacto" class="flex items-center justify-between rounded-2xl px-4 py-3 bg-white/5 hover:bg-white/10 transition-colors">
+            Contacto
+            <span class="text-white/40">04</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="mt-10 rounded-3xl bg-bluechip-500/15 border border-bluechip-500/20 p-5">
+        <p class="text-xs uppercase tracking-[0.28em] text-white/50">Llamada a la acción</p>
+        <p class="mt-3 text-sm text-white/85 leading-relaxed">
+          Ideal para despachos que quieren proyectar orden, cercanía y profesionalidad.
+        </p>
+        <a href="#contacto" class="mt-5 inline-flex items-center justify-center w-full rounded-2xl bg-white text-ink px-4 py-3 text-sm font-bold hover:bg-bluechip-50 transition-colors">
+          Pedir una demo
+        </a>
+      </div>
+
+      <div class="mt-10 text-xs text-white/40 leading-relaxed">
+        Demo para presentar a clientes potenciales. Diseño de referencia, no funcional.
+      </div>
+    </aside>
+
+    <main class="overflow-hidden">
+      <section class="relative bg-[radial-gradient(circle_at_top_right,_rgba(59,130,246,0.12),_transparent_30%),linear-gradient(to_bottom,_#ffffff,_#f8fafc)]">
+        <div class="max-w-7xl mx-auto px-6 py-10 lg:py-16">
+          <div class="flex items-center justify-between gap-4 mb-8">
+            <div class="inline-flex items-center gap-2 rounded-full border border-bluechip-100 bg-bluechip-50 px-4 py-2 text-xs font-bold uppercase tracking-[0.28em] text-bluechip-700">
+              Web corporativa para fincas
+            </div>
+            <a href="index.html" class="text-sm font-semibold text-steel-600 hover:text-steel-900 transition-colors">
+              Volver a Cremheda
+            </a>
+          </div>
+
+          <div class="grid xl:grid-cols-12 gap-10 items-center">
+            <div class="xl:col-span-5 space-y-6">
+              <h1 class="font-display text-5xl lg:text-7xl leading-[0.95] text-ink">
+                Gestión de comunidades con una imagen <span class="text-bluechip-700">seria y cercana</span>.
+              </h1>
+              <p class="text-lg text-steel-600 max-w-xl leading-relaxed">
+                Una presencia digital pensada para administradores de fincas que quieren transmitir confianza, ordenar los canales de atención y evitar llamadas repetidas.
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-steel-700 shadow-sm border border-steel-100">Incidencias</span>
+                <span class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-steel-700 shadow-sm border border-steel-100">Documentación</span>
+                <span class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-steel-700 shadow-sm border border-steel-100">Avisos</span>
+                <span class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-steel-700 shadow-sm border border-steel-100">Contacto directo</span>
+              </div>
+              <div class="flex gap-4">
+                <a href="#contacto" class="inline-flex items-center justify-center rounded-2xl bg-ink px-6 py-4 text-white font-bold shadow-soft hover:bg-steel-900 transition-colors">
+                  Solicitar presupuesto
+                </a>
+                <a href="#servicios" class="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-4 text-ink font-bold border border-steel-200 hover:border-steel-300 transition-colors">
+                  Ver estructura
+                </a>
+              </div>
+            </div>
+
+            <div class="xl:col-span-7">
+              <div class="relative rounded-[2rem] overflow-hidden shadow-soft bg-ink">
+                <img src="assets/fincas-hero.png" alt="Administrador de fincas revisando documentación en una comunidad residencial" class="w-full h-[420px] lg:h-[620px] object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div>
+                <div class="absolute left-5 right-5 bottom-5 grid md:grid-cols-3 gap-3">
+                  <div class="rounded-2xl bg-white/90 backdrop-blur border border-white/60 p-4">
+                    <p class="text-xs font-bold uppercase tracking-[0.22em] text-steel-400">Atención</p>
+                    <p class="mt-1 font-bold text-ink">Respuesta en 24 horas</p>
+                  </div>
+                  <div class="rounded-2xl bg-white/90 backdrop-blur border border-white/60 p-4">
+                    <p class="text-xs font-bold uppercase tracking-[0.22em] text-steel-400">Comunicación</p>
+                    <p class="mt-1 font-bold text-ink">Canal claro para vecinos</p>
+                  </div>
+                  <div class="rounded-2xl bg-white/90 backdrop-blur border border-white/60 p-4">
+                    <p class="text-xs font-bold uppercase tracking-[0.22em] text-steel-400">Gestión</p>
+                    <p class="mt-1 font-bold text-ink">Documentos y avisos ordenados</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-4">
+              <p class="text-sm font-bold uppercase tracking-[0.28em] text-bluechip-700">Servicios</p>
+              <h2 class="mt-4 font-display text-4xl text-ink leading-tight">
+                Una web que explica lo importante sin ruido.
+              </h2>
+              <p class="mt-5 text-steel-600 leading-relaxed">
+                El sitio está planteado para que una comunidad encuentre rápido lo que busca: documentación, contacto, incidencias y servicios de administración.
+              </p>
+            </div>
+
+            <div class="lg:col-span-8 grid md:grid-cols-2 gap-6">
+              <article class="rounded-[1.75rem] bg-[#f8fbff] border border-bluechip-100 p-7">
+                <div class="w-12 h-12 rounded-2xl bg-bluechip-100 flex items-center justify-center text-bluechip-700">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.172a2 2 0 011.414.586l5.828 5.828A2 2 0 0119 10.828V19a2 2 0 01-2 2z"></path></svg>
+                </div>
+                <h3 class="mt-5 text-2xl font-semibold text-ink">Documentación digital</h3>
+                <p class="mt-3 text-steel-600 leading-relaxed">Actas, presupuestos y comunicados compartidos de forma ordenada y fácil de encontrar.</p>
+              </article>
+
+              <article class="rounded-[1.75rem] bg-[#f8fbff] border border-bluechip-100 p-7">
+                <div class="w-12 h-12 rounded-2xl bg-bluechip-100 flex items-center justify-center text-bluechip-700">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <h3 class="mt-5 text-2xl font-semibold text-ink">Contacto profesional</h3>
+                <p class="mt-3 text-steel-600 leading-relaxed">Formularios y correo corporativo para ofrecer una vía clara de atención a propietarios y presidentes.</p>
+              </article>
+
+              <article class="rounded-[1.75rem] bg-[#f8fbff] border border-bluechip-100 p-7">
+                <div class="w-12 h-12 rounded-2xl bg-bluechip-100 flex items-center justify-center text-bluechip-700">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12h-6m6 0l-3-3m3 3l-3 3M3 12h6m-6 0l3-3m-3 3l3 3"></path></svg>
+                </div>
+                <h3 class="mt-5 text-2xl font-semibold text-ink">Incidencias y seguimiento</h3>
+                <p class="mt-3 text-steel-600 leading-relaxed">Un flujo sencillo para reportar incidencias y mostrar estado, prioridad y solución prevista.</p>
+              </article>
+
+              <article class="rounded-[1.75rem] bg-[#f8fbff] border border-bluechip-100 p-7">
+                <div class="w-12 h-12 rounded-2xl bg-bluechip-100 flex items-center justify-center text-bluechip-700">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-3.866 0-7 1.343-7 3v2c0 1.657 3.134 3 7 3s7-1.343 7-3v-2c0-1.657-3.134-3-7-3zm0 8v4m-4 0h8"></path></svg>
+                </div>
+                <h3 class="mt-5 text-2xl font-semibold text-ink">Gestión de la comunidad</h3>
+                <p class="mt-3 text-steel-600 leading-relaxed">Secciones que ayudan a explicar el servicio y a reforzar la confianza en la administración.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comunidad" class="py-20 lg:py-28 bg-[#f3f6fb]">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-6">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="rounded-[1.75rem] bg-white border border-steel-100 p-6 shadow-sm">
+                  <p class="text-xs font-bold uppercase tracking-[0.22em] text-steel-400">Portal vecino</p>
+                  <p class="mt-2 text-lg font-bold text-ink">Avisos visibles</p>
+                  <p class="mt-2 text-sm text-steel-600">La comunidad ve rápidamente novedades, convocatorias y documentos.</p>
+                </div>
+                <div class="rounded-[1.75rem] bg-white border border-steel-100 p-6 shadow-sm">
+                  <p class="text-xs font-bold uppercase tracking-[0.22em] text-steel-400">Soporte</p>
+                  <p class="mt-2 text-lg font-bold text-ink">Incidencias centralizadas</p>
+                  <p class="mt-2 text-sm text-steel-600">Una sola vía de entrada para evitar mensajes dispersos.</p>
+                </div>
+                <div class="sm:col-span-2 rounded-[1.75rem] bg-ink text-white p-6 shadow-soft">
+                  <p class="text-xs font-bold uppercase tracking-[0.22em] text-white/50">Enfoque</p>
+                  <p class="mt-3 text-2xl font-semibold leading-tight">
+                    Cercanía suficiente para que el vecino se sienta atendido, y estructura suficiente para que el despacho trabaje con orden.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-6">
+              <div class="rounded-[2rem] overflow-hidden shadow-soft bg-white">
+                <img src="assets/fincas-hero.png" alt="Detalle de una comunidad y su administración" class="w-full h-[360px] object-cover">
+                <div class="p-6 lg:p-8">
+                  <h3 class="text-2xl font-semibold text-ink">Visual limpio, credibilidad inmediata</h3>
+                  <p class="mt-3 text-steel-600 leading-relaxed">
+                    Este enfoque funciona especialmente bien para despachos que quieren una web muy clara, sin estética pesada, pero con un acabado profesional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proceso" class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
+            <div>
+              <p class="text-sm font-bold uppercase tracking-[0.28em] text-bluechip-700">Proceso</p>
+              <h2 class="mt-4 font-display text-4xl text-ink">Cómo se presenta el servicio</h2>
+            </div>
+            <p class="max-w-2xl text-steel-600 leading-relaxed">
+              Un esquema simple, que ayuda a vender el servicio sin parecer una web genérica de plantillas.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="rounded-[1.75rem] bg-ink text-white p-7">
+              <p class="text-sm font-bold text-white/50">01</p>
+              <h3 class="mt-4 text-2xl font-semibold">Diagnóstico</h3>
+              <p class="mt-3 text-white/70 leading-relaxed">Se revisa la situación de la comunidad y qué necesita comunicar.</p>
+            </div>
+            <div class="rounded-[1.75rem] bg-[#f8fbff] border border-bluechip-100 p-7">
+              <p class="text-sm font-bold text-bluechip-700">02</p>
+              <h3 class="mt-4 text-2xl font-semibold text-ink">Arquitectura</h3>
+              <p class="mt-3 text-steel-600 leading-relaxed">Se estructuran secciones claras para documentación, incidencias y contacto.</p>
+            </div>
+            <div class="rounded-[1.75rem] bg-[#f8fbff] border border-bluechip-100 p-7">
+              <p class="text-sm font-bold text-bluechip-700">03</p>
+              <h3 class="mt-4 text-2xl font-semibold text-ink">Publicación</h3>
+              <p class="mt-3 text-steel-600 leading-relaxed">La web se entrega lista para captar consultas y dar una imagen sólida.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="py-20 lg:py-28 bg-[#0b1220] text-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-6">
+              <p class="text-sm font-bold uppercase tracking-[0.28em] text-white/45">Contacto</p>
+              <h2 class="mt-4 font-display text-4xl lg:text-5xl leading-tight">
+                Pide una versión adaptada a tu despacho.
+              </h2>
+              <p class="mt-5 text-white/70 max-w-xl leading-relaxed">
+                Podemos personalizar colores, fotos, textos y bloques de contenido para que la web encaje con el tipo de comunidad o servicio que administras.
+              </p>
+            </div>
+
+            <div class="lg:col-span-6">
+              <div class="rounded-[2rem] bg-white text-ink p-7 lg:p-8 shadow-soft">
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <a href="mailto:contacto@cremheda.online?subject=Demo%20Administrador%20de%20Fincas" class="rounded-2xl bg-bluechip-700 text-white px-5 py-4 font-bold text-center hover:bg-bluechip-900 transition-colors">
+                    Quiero esta web
+                  </a>
+                  <a href="index.html#ejemplos" class="rounded-2xl bg-steel-50 border border-steel-200 px-5 py-4 font-bold text-center hover:bg-steel-100 transition-colors">
+                    Ver más ejemplos
+                  </a>
+                </div>
+                <div class="mt-6 rounded-2xl bg-[#f8fbff] border border-bluechip-100 p-5 text-sm text-steel-600 leading-relaxed">
+                  Ideal para administradores de fincas, comunidades de vecinos y despachos inmobiliarios que necesitan una web limpia y directa.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

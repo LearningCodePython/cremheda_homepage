@@ -20,6 +20,8 @@ Este proyecto arranca como una pagina web unica que comunica la propuesta de val
 - Estilo visual: Tailwind CSS via CDN
 - Tipografia: Google Fonts (`Plus Jakarta Sans` y `Outfit`)
 - Idioma principal: espanol
+- Demos adicionales: `demo-administrador-fincas.html` y `demo-psicologia.html`
+- Imagenes de ejemplo: carpeta `assets/`
 
 ## Funcionalidades actuales
 
@@ -30,11 +32,15 @@ Este proyecto arranca como una pagina web unica que comunica la propuesta de val
 - Flujo de trabajo en 3 pasos
 - Calculadora interactiva de presupuesto
 - Formulario de contacto con modal de exito
+- Seccion de ejemplos enlazando dos webs de demostracion
 - Footer con datos de contacto y enlaces legales
 
 ## Estructura
 
 - `index.html`: pagina principal y toda la logica frontend
+- `demo-administrador-fincas.html`: demo para administrador de fincas
+- `demo-psicologia.html`: demo para consulta de psicologia
+- `assets/`: imagenes de apoyo para las demos
 - `README.md`: guia base del proyecto y trazabilidad
 - `release.md`: historial inicial de entrega y cambios
 

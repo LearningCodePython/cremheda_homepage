@@ -48,3 +48,34 @@ Esta entrega deja documentada la landing page inicial y establece una referencia
 2. Externalizar CSS y JavaScript.
 3. Crear version 0.2.0 con datos reales y textos finales.
 4. Definir un flujo formal de revision y aprobacion de cambios.
+
+---
+
+# Release 0.1.1
+
+**Fecha:** 2026-06-24
+
+## Resumen
+
+Se añadieron dos paginas de ejemplo enlazadas desde la portada para mostrar como podria verse la web de un administrador de fincas y la de una consulta de psicologia.
+
+## Alcance de esta entrega
+
+- enlace visible a la seccion de ejemplos desde `index.html`
+- demo para administracion de fincas en `demo-administrador-fincas.html`
+- demo para consulta de psicologia en `demo-psicologia.html`
+- imagenes de apoyo en `assets/`
+- actualizacion de `README.md` para reflejar las nuevas demos
+
+## Cambios relevantes
+
+- Se incorporo una seccion de acceso rapido a ejemplos en la pagina principal.
+- Se creo una demo corporativa para el sector de administracion de fincas.
+- Se creo una demo mas calmada y cercana para el sector de psicologia.
+- Se añadieron imagenes especificas para cada sector.
+- Se actualizaron los enlaces rapidos del pie de pagina para incluir ejemplos.
+
+## Observaciones
+
+- Las demos son presentacionales y no dependen de backend.
+- El contenido esta pensado como referencia comercial para clientes potenciales.

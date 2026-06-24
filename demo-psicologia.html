@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo | Consulta de Psicología</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Cormorant Garamond', 'serif'],
+          },
+          colors: {
+            sage: {
+              50: '#f6faf6',
+              100: '#e4f0e4',
+              200: '#c6dfc6',
+              500: '#6a9c7d',
+              700: '#3f6f58',
+              900: '#24352d',
+            },
+            linen: '#faf7f2',
+            cocoa: '#3a322d',
+          },
+          boxShadow: {
+            glow: '0 18px 60px rgba(63, 111, 88, 0.12)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-linen text-cocoa font-sans">
+  <header class="border-b border-[#e9e2d9] bg-white/80 backdrop-blur-md sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-full bg-sage-700 text-white flex items-center justify-center font-semibold">A</div>
+        <div>
+          <p class="font-semibold text-lg leading-none text-cocoa">Aire Serena</p>
+          <p class="text-xs text-[#8b7f74]">Consulta de psicología</p>
+        </div>
+      </div>
+      <a href="index.html" class="text-sm font-semibold text-sage-700 hover:text-sage-900 transition-colors">
+        Volver a Cremheda
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(106,156,125,0.16),_transparent_32%),radial-gradient(circle_at_bottom_right,_rgba(198,223,198,0.45),_transparent_30%)]"></div>
+      <div class="max-w-7xl mx-auto px-6 py-14 lg:py-20 relative">
+        <div class="grid lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-5 space-y-6">
+            <p class="inline-flex items-center rounded-full bg-white border border-[#eadfd2] px-4 py-2 text-xs font-bold uppercase tracking-[0.28em] text-sage-700 shadow-sm">
+              Diseño para consulta terapéutica
+            </p>
+            <h1 class="font-serif text-6xl lg:text-8xl leading-[0.9] text-cocoa">
+              Un lugar online que respira <span class="text-sage-700">calma</span>.
+            </h1>
+            <p class="text-lg text-[#6f625a] leading-relaxed max-w-xl">
+              Esta propuesta utiliza más aire, más silencio visual y una narrativa más humana para que la primera impresión transmita confianza y cuidado.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span class="rounded-full bg-white border border-[#eadfd2] px-4 py-2 text-sm font-medium text-[#6f625a]">Primera cita</span>
+              <span class="rounded-full bg-white border border-[#eadfd2] px-4 py-2 text-sm font-medium text-[#6f625a]">Terapia online</span>
+              <span class="rounded-full bg-white border border-[#eadfd2] px-4 py-2 text-sm font-medium text-[#6f625a]">Ansiedad y duelo</span>
+            </div>
+            <div class="flex gap-4">
+              <a href="#contacto" class="inline-flex items-center justify-center rounded-2xl bg-sage-700 px-6 py-4 text-white font-semibold shadow-glow hover:bg-sage-900 transition-colors">
+                Pedir primera cita
+              </a>
+              <a href="#servicios" class="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-4 text-cocoa font-semibold border border-[#eadfd2] hover:bg-[#fcfbf8] transition-colors">
+                Ver enfoque
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-5 items-stretch">
+              <div class="relative rounded-[2rem] overflow-hidden shadow-glow bg-white">
+                <img src="assets/psicologia-hero.png" alt="Consulta de psicología con ambiente cálido y tranquilo" class="w-full h-[500px] object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#1d1916]/35 via-transparent to-transparent"></div>
+                <div class="absolute left-5 bottom-5 right-5 rounded-3xl bg-white/88 backdrop-blur border border-white/50 p-5">
+                  <p class="text-xs font-bold uppercase tracking-[0.28em] text-sage-700">Ambiente</p>
+                  <p class="mt-2 text-cocoa font-semibold text-lg">Luz natural, privacidad y un espacio que invita a bajar el ritmo.</p>
+                </div>
+              </div>
+              <div class="space-y-5">
+                <div class="rounded-[2rem] bg-white border border-[#eadfd2] p-6 shadow-sm">
+                  <p class="text-xs font-bold uppercase tracking-[0.28em] text-sage-700">Tono</p>
+                  <p class="mt-3 text-2xl font-serif text-cocoa">Cálido, respetuoso y claro.</p>
+                </div>
+                <div class="rounded-[2rem] bg-sage-50 border border-sage-100 p-6">
+                  <p class="text-sm font-semibold text-sage-700">Objetivo</p>
+                  <p class="mt-2 text-[#675b52] leading-relaxed">
+                    Que la web ayude a dar el primer paso sin sensación de prisa ni sobrecarga.
+                  </p>
+                </div>
+                <div class="rounded-[2rem] bg-white border border-[#eadfd2] p-6 shadow-sm">
+                  <p class="text-sm font-semibold text-cocoa">Reserva simple</p>
+                  <p class="mt-2 text-[#675b52] leading-relaxed">
+                    Un formulario breve y una llamada a la acción muy limpia para concertar cita.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="py-20 lg:py-28">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-8 items-end mb-12">
+          <div class="lg:col-span-6">
+            <p class="text-sm font-bold uppercase tracking-[0.28em] text-sage-700">Servicios</p>
+            <h2 class="mt-4 font-serif text-5xl text-cocoa leading-tight">
+              Diseño que acompaña, no que distrae.
+            </h2>
+          </div>
+          <div class="lg:col-span-6">
+            <p class="text-[#6f625a] leading-relaxed">
+              La composición busca dar sensación de pausa. Las secciones son muy legibles y permiten explicar la consulta con un lenguaje cercano y profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+          <article class="rounded-[1.75rem] bg-white border border-[#eadfd2] p-6 shadow-sm">
+            <div class="w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-3.866 0-7 1.343-7 3s3.134 3 7 3 7-1.343 7-3-3.134-3-7-3zm0 6v7"></path></svg>
+            </div>
+            <h3 class="mt-5 text-2xl font-semibold text-cocoa">Primera consulta</h3>
+            <p class="mt-3 text-[#6f625a] leading-relaxed">Una explicación amable del primer encuentro y de cómo se trabaja.</p>
+          </article>
+          <article class="rounded-[1.75rem] bg-white border border-[#eadfd2] p-6 shadow-sm">
+            <div class="w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            </div>
+            <h3 class="mt-5 text-2xl font-semibold text-cocoa">Agenda sencilla</h3>
+            <p class="mt-3 text-[#6f625a] leading-relaxed">Acceso rápido a reserva de sesión, presencial u online.</p>
+          </article>
+          <article class="rounded-[1.75rem] bg-white border border-[#eadfd2] p-6 shadow-sm">
+            <div class="w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h10M4 18h12"></path></svg>
+            </div>
+            <h3 class="mt-5 text-2xl font-semibold text-cocoa">Especialidades</h3>
+            <p class="mt-3 text-[#6f625a] leading-relaxed">Bloques claros para ansiedad, duelo, pareja, autoestima o trauma.</p>
+          </article>
+          <article class="rounded-[1.75rem] bg-white border border-[#eadfd2] p-6 shadow-sm">
+            <div class="w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </div>
+            <h3 class="mt-5 text-2xl font-semibold text-cocoa">Contacto humano</h3>
+            <p class="mt-3 text-[#6f625a] leading-relaxed">Formas de contacto que no abruman y mantienen privacidad.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6">
+            <div class="rounded-[2rem] overflow-hidden shadow-glow">
+              <img src="assets/psicologia-hero.png" alt="Despacho de psicología con luz suave" class="w-full h-[430px] object-cover">
+            </div>
+          </div>
+          <div class="lg:col-span-6 space-y-6">
+            <p class="text-sm font-bold uppercase tracking-[0.28em] text-sage-700">Enfoque visual</p>
+            <h2 class="font-serif text-5xl text-cocoa leading-tight">
+              Más aire, menos presión.
+            </h2>
+            <p class="text-[#6f625a] leading-relaxed max-w-2xl">
+              La web se inspira en una consulta real: tonos cálidos, una imagen principal acogedora y bloques que dejan espacio para respirar.
+            </p>
+            <div class="grid sm:grid-cols-3 gap-4">
+              <div class="rounded-[1.5rem] bg-[#f8f5ef] border border-[#eadfd2] p-5">
+                <p class="text-sm font-semibold text-sage-700">01</p>
+                <p class="mt-2 font-semibold text-cocoa">Confianza</p>
+                <p class="mt-2 text-sm text-[#6f625a]">La primera impresión es serena y profesional.</p>
+              </div>
+              <div class="rounded-[1.5rem] bg-[#f8f5ef] border border-[#eadfd2] p-5">
+                <p class="text-sm font-semibold text-sage-700">02</p>
+                <p class="mt-2 font-semibold text-cocoa">Legibilidad</p>
+                <p class="mt-2 text-sm text-[#6f625a]">El contenido se entiende rápido y sin estrés visual.</p>
+              </div>
+              <div class="rounded-[1.5rem] bg-[#f8f5ef] border border-[#eadfd2] p-5">
+                <p class="text-sm font-semibold text-sage-700">03</p>
+                <p class="mt-2 font-semibold text-cocoa">Cercanía</p>
+                <p class="mt-2 text-sm text-[#6f625a]">El tono habla como una persona, no como una clínica fría.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 lg:py-28 bg-[#f7f2eb]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-7 rounded-[2rem] bg-white border border-[#eadfd2] p-8 lg:p-10 shadow-sm">
+            <p class="text-sm font-bold uppercase tracking-[0.28em] text-sage-700">Estructura de la web</p>
+            <h2 class="mt-4 font-serif text-5xl text-cocoa leading-tight">Secciones que ayudan a tomar la decisión.</h2>
+            <div class="mt-8 grid md:grid-cols-2 gap-5">
+              <div class="rounded-[1.5rem] bg-sage-50 border border-sage-100 p-6">
+                <h3 class="font-semibold text-cocoa text-xl">Sobre mí</h3>
+                <p class="mt-3 text-[#6f625a] leading-relaxed">Trayectoria, enfoque y valores, contados con un tono humano.</p>
+              </div>
+              <div class="rounded-[1.5rem] bg-sage-50 border border-sage-100 p-6">
+                <h3 class="font-semibold text-cocoa text-xl">Cómo trabajo</h3>
+                <p class="mt-3 text-[#6f625a] leading-relaxed">Explicación clara del proceso terapéutico y del tipo de acompañamiento.</p>
+              </div>
+              <div class="rounded-[1.5rem] bg-sage-50 border border-sage-100 p-6">
+                <h3 class="font-semibold text-cocoa text-xl">Especialidades</h3>
+                <p class="mt-3 text-[#6f625a] leading-relaxed">Bloques de texto sencillos para cada motivo de consulta.</p>
+              </div>
+              <div class="rounded-[1.5rem] bg-sage-50 border border-sage-100 p-6">
+                <h3 class="font-semibold text-cocoa text-xl">Contacto</h3>
+                <p class="mt-3 text-[#6f625a] leading-relaxed">Llamada a la acción elegante, rápida y respetuosa.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 rounded-[2rem] bg-sage-700 text-white p-8 lg:p-10 shadow-glow">
+            <p class="text-sm font-bold uppercase tracking-[0.28em] text-white/55">Contacto</p>
+            <h2 class="mt-4 font-serif text-5xl leading-tight">Una web pensada para dar el primer paso.</h2>
+            <p class="mt-5 text-white/80 leading-relaxed">
+              La pieza final busca convertir visitas en consultas, sin presionar y con una sensación de cuidado constante.
+            </p>
+            <div class="mt-8 space-y-3">
+              <a href="mailto:contacto@cremheda.online?subject=Demo%20Consulta%20Psicolog%C3%ADa" class="block rounded-2xl bg-white text-sage-900 px-5 py-4 font-semibold text-center hover:bg-[#fcfbf8] transition-colors">
+                Quiero esta web
+              </a>
+              <a href="index.html#ejemplos" class="block rounded-2xl border border-white/20 px-5 py-4 font-semibold text-center hover:bg-white/10 transition-colors">
+                Ver más ejemplos
+              </a>
+            </div>
+            <div class="mt-8 rounded-[1.5rem] bg-white/10 border border-white/15 p-5 text-sm text-white/80 leading-relaxed">
+              Ideal para consultas de psicología, terapia individual, acompañamiento emocional y centros de bienestar.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
